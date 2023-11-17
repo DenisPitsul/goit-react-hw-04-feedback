@@ -1,4 +1,3 @@
-import { Component } from "react";
 import classes from './Section.module.css'
 
 export const Section = ({title, children}) => {

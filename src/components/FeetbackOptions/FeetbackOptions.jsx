@@ -1,4 +1,3 @@
-import { Component } from "react";
 import classes from './FeetbackOptions.module.css'
 
 const FeetbackOptions = ({ options, onLeaveFeedback }) => {

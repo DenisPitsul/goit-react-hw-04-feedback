@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useMemo, useState } from "react"
+import React, { useEffect, useMemo, useState } from "react"
 import FeetbackOptions from "./FeetbackOptions/FeetbackOptions"
 import Statistics from "./Statistics/Statistics"
 import Section from "./Section/Section"
@@ -18,7 +18,7 @@ const App = () => {
 
   const positiveFeedbackPercentage = useMemo(() => {
     return (Math.round((good / totalFeedback) * 100));
-  }, [totalFeedback])
+  }, [totalFeedback, good])
 
   const onLeaveFeedback = (option) => {
     if(varToString({ good }) === option) {
